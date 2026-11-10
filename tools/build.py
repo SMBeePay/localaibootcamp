@@ -274,11 +274,10 @@ how = f'''
   <div class="wrap split">
     <div>
       <h2>Run a coworking space? Host a session.</h2>
-      <p>Sessions bring local professionals through your doors and give your members something worth staying for. Hosts share in the revenue from every session at their space.</p>
+      <p>Sessions bring local professionals through your doors and give your members something worth staying for. If you'd like to host, let's talk about what would work for your space.</p>
     </div>
     <div>
       <ul class="checklist" style="margin-bottom:28px">
-        <li>A share of revenue from sessions at your space</li>
         <li>Something valuable to offer your members</li>
         <li>New faces in the building who may come back to tour</li>
         <li>You provide the room, Wi-Fi and a screen. Andrew handles the rest.</li>
