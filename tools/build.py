@@ -1,6 +1,6 @@
 import pathlib, sys
 OUT = pathlib.Path(sys.argv[1])
-FORM = "https://formsubmit.co/ajax/andrew@localaibootcamp.com"
+FORM = "https://formsubmit.co/ajax/6638b572df1cd1faa5b6cd55414ca8cc"
 EMAIL = "andrew@localaibootcamp.com"
 SITE = "https://localaibootcamp.com"
 
@@ -49,7 +49,7 @@ FOOTER = f'''</main>
     <div>
       <a class="brand" href="index.html">Local AI <span>Bootcamp</span></a>
       <p style="margin-top:14px">In-person, hands-on AI training for small businesses and teams across Dallas–Fort Worth.</p>
-      <p><a href="mailto:{EMAIL}">{EMAIL}</a></p>
+      <p><a href="contact.html">Book a call</a></p>
     </div>
     <div>
       <h3>Training</h3>
@@ -479,7 +479,6 @@ contact = f'''
     <div>
       <h1>Let's talk about your team.</h1>
       <p class="lede">Tell Andrew a little about your business. He'll reply within one business day to set up a 30-minute call.</p>
-      <p>Prefer email? <a href="mailto:{EMAIL}">{EMAIL}</a></p>
     </div>
     {form("contact","Send", contact_fields, "Sent. Andrew will reply within one business day to set up a call.")}
   </div>

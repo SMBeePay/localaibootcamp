@@ -22,7 +22,7 @@ document.querySelectorAll('form.signup').forEach(function (form) {
         status.textContent = form.dataset.success || 'Sent. Andrew will be in touch within one business day.';
       })
       .catch(function () {
-        status.textContent = 'That didn’t send. Check your connection and try again, or email andrew@localaibootcamp.com.';
+        status.textContent = 'That didn’t send. Check your connection, then try again.';
       })
       .finally(function () { button.disabled = false; });
   });
