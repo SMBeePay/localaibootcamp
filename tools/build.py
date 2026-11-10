@@ -357,9 +357,12 @@ page("teams.html","In-Person AI Training for Teams in DFW | Local AI Bootcamp",
 # ---------------- ABOUT ----------------
 about = '''
 <section class="hero">
-  <div class="wrap">
-    <h1>Hi, I’m Andrew.</h1>
-    <p class="lede">I’ve spent well over 15 years in marketing. Lately most of that work runs through AI.</p>
+  <div class="wrap hero-grid">
+    <div>
+      <h1>Hi, I’m Andrew.</h1>
+      <p class="lede">I’ve spent well over 15 years in marketing. Lately most of that work runs through AI.</p>
+    </div>
+    <img class="portrait" src="assets/andrew.jpg" width="400" height="455" alt="Andrew Neal, smiling, in front of tropical plants">
   </div>
 </section>
 <section class="white">
