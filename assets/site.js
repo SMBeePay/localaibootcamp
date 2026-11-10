@@ -7,11 +7,10 @@ document.querySelectorAll('.menu-toggle').forEach(function (btn) {
   });
 });
 
-// Forms: posts to the endpoint in the form's action (e.g. Formspree).
+// Forms: posts to FormSubmit, which emails each submission to the inbox in the form's action.
 document.querySelectorAll('form.signup').forEach(function (form) {
   form.addEventListener('submit', function (e) {
     var action = form.getAttribute('action') || '';
-    if (action.indexOf('YOUR_FORM_ID') !== -1) return; // not wired yet: let the browser handle it
     e.preventDefault();
     var status = form.querySelector('.form-status');
     var button = form.querySelector('button[type="submit"]');
@@ -23,7 +22,7 @@ document.querySelectorAll('form.signup').forEach(function (form) {
         status.textContent = form.dataset.success || 'Sent. Andrew will be in touch within one business day.';
       })
       .catch(function () {
-        status.textContent = 'That didn’t send. Check your connection and try again, or email hello@localaibootcamp.com.';
+        status.textContent = 'That didn’t send. Check your connection and try again, or email andrew@localaibootcamp.com.';
       })
       .finally(function () { button.disabled = false; });
   });

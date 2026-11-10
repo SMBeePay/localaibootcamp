@@ -1,7 +1,7 @@
 import pathlib, sys
 OUT = pathlib.Path(sys.argv[1])
-FORM = "https://formspree.io/f/YOUR_FORM_ID"
-EMAIL = "hello@localaibootcamp.com"
+FORM = "https://formsubmit.co/ajax/andrew@localaibootcamp.com"
+EMAIL = "andrew@localaibootcamp.com"
 SITE = "https://localaibootcamp.com"
 
 NAV = [("index.html","Home"),("team-training.html","Team training"),("classes.html","Classes"),("ai-policy.html","AI policy"),("about.html","About")]
@@ -82,6 +82,9 @@ def page(path, title, desc, body, extra_head=""):
 def form(kind, button, fields, success, note=""):
     return f'''<form class="signup" action="{FORM}" method="POST" data-success="{success}">
   <input type="hidden" name="form" value="{kind}">
+  <input type="hidden" name="_subject" value="New {kind} submission from localaibootcamp.com">
+  <input type="hidden" name="_template" value="table">
+  <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off" aria-hidden="true">
   {fields}
   <button class="btn" type="submit">{button}</button>
   {f'<p class="form-note">{note}</p>' if note else ''}
