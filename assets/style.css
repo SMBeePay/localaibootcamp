@@ -209,3 +209,19 @@ section.ink .field label { color: var(--paper); }
   .field-row { grid-template-columns: 1fr; }
 }
 @media (prefers-reduced-motion: reduce) { * { transition: none !important; animation: none !important; } }
+
+/* v2 additions */
+.shift li { display: block; }
+.shift li span { display: block; text-align: left; font-size: 0.9rem; color: var(--ink-soft); }
+.shift li strong { display: block; font-weight: 600; }
+.rung.noprice { grid-template-columns: 1fr 2fr; }
+.contrast { display: grid; grid-template-columns: repeat(3, 1fr); gap: 0; border-top: 2px solid var(--ink); }
+.contrast > div { padding: 28px 28px 0 0; }
+.contrast > div + div { padding-left: 28px; border-left: 1px solid var(--line); }
+.contrast h3 { text-decoration: line-through; text-decoration-thickness: 3px; text-decoration-color: var(--marker); }
+.pull { font-family: var(--display); font-stretch: 125%; font-weight: 800; font-size: clamp(2rem, 4.4vw, 3.6rem); line-height: 1.04; letter-spacing: -0.02em; max-width: 18ch; margin: 0 0 28px; }
+@media (max-width: 900px) {
+  .rung.noprice { grid-template-columns: 1fr; }
+  .contrast { grid-template-columns: 1fr; }
+  .contrast > div, .contrast > div + div { padding: 24px 0 0; border-left: 0; }
+}
