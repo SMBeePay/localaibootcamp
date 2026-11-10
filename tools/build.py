@@ -14,7 +14,7 @@ def head(title, desc, path):
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>{title}</title>
 <meta name="description" content="{desc}">
-<link rel="canonical" href="{SITE}/{'' if path=='index.html' else path}">
+<link rel="canonical" href="{SITE}/{'' if path=='index.html' else path[:-5]}">
 <meta property="og:title" content="{title}">
 <meta property="og:description" content="{desc}">
 <meta property="og:type" content="website">
@@ -55,7 +55,7 @@ FOOTER = f'''</main>
       <h3>Training</h3>
       <ul>
         <li><a href="team-training.html">Team training</a></li>
-        <li><a href="team-training.html#small-group">Private small groups</a></li>
+        <li><a href="team-training#small-group">Private small groups</a></li>
         <li><a href="classes.html">Public classes</a></li>
         <li><a href="ai-policy.html">AI policy &amp; governance</a></li>
       </ul>
@@ -492,6 +492,6 @@ page("contact.html","Contact | Local AI Bootcamp",
 # favicon, robots, sitemap
 (OUT/"assets/favicon.svg").write_text('<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64"><rect width="64" height="64" rx="12" fill="#172033"/><rect x="30" y="30" width="26" height="26" fill="#FFD54A" transform="rotate(4 43 43)"/><text x="10" y="40" font-family="Arial Black,Arial" font-weight="900" font-size="26" fill="#fff">AI</text></svg>')
 (OUT/"robots.txt").write_text(f"User-agent: *\nAllow: /\nSitemap: {SITE}/sitemap.xml\n")
-urls = "".join(f"<url><loc>{SITE}/{'' if p=='index.html' else p}</loc></url>" for p in ["index.html","team-training.html","classes.html","ai-policy.html","about.html","contact.html"])
+urls = "".join(f"<url><loc>{SITE}/{'' if p=='index.html' else p[:-5]}</loc></url>" for p in ["index.html","team-training.html","classes.html","ai-policy.html","about.html","contact.html"])
 (OUT/"sitemap.xml").write_text(f'<?xml version="1.0" encoding="UTF-8"?><urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">{urls}</urlset>')
 print("built")
