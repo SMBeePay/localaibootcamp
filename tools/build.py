@@ -192,7 +192,7 @@ home = f'''
   <div class="wrap split">
     <div>
       <h2>Taught by someone who uses it to run a business.</h2>
-      <p>Andrew Neal has spent 15+ years in marketing, leading marketing for 8-figure service companies and as a senior marketing director at both bootstrapped and VC-funded software companies. Today he runs his own service business in DFW, and AI is part of how he works every day.</p>
+      <p>Andrew Neal has spent well over 15 years in marketing, helping lead marketing for a nine-figure service business, an online education company, a fintech startup and an e-commerce brand. He builds with AI, has led AI initiatives for clients and the companies he's worked with, and runs his own service business in DFW where AI handles much of the marketing and back office.</p>
       <p><a href="about.html">More about Andrew</a></p>
     </div>
     <ul class="checklist">
@@ -357,34 +357,47 @@ page("teams.html","In-Person AI Training for Teams in DFW | Local AI Bootcamp",
 # ---------------- ABOUT ----------------
 about = '''
 <section class="hero">
-  <div class="wrap split">
-    <div>
-      <h1>Hi, I'm Andrew.</h1>
-      <p class="lede">I help people take what they already know and make it go further with AI. In person, at the same table, on your own work.</p>
-    </div>
-    <div class="callout">
-      <p>Based in Royse City. Working with people across Dallas, Fort Worth and everywhere in between.</p>
-    </div>
+  <div class="wrap">
+    <h1>Hi, I’m Andrew.</h1>
+    <p class="lede">I’ve spent well over 15 years in marketing. Lately most of that work runs through AI.</p>
   </div>
 </section>
 <section class="white">
   <div class="wrap split">
     <div>
       <h2>Background</h2>
-      <p>I've spent more than 15 years in marketing. I've been head of marketing for 8-figure service companies and a senior marketing director at both bootstrapped and VC-funded software companies.</p>
-      <p>I also own and run a local service business here in DFW. AI is part of how I work every day. It hasn't replaced anything I know. It's let me do more with it.</p>
+      <p>I’m Andrew Neal, and I live here in DFW. I’ve helped lead marketing for a nine-figure service business, an online education company, a fintech startup and an e-commerce brand. I’ve managed seven-figure budgets, sales teams and content teams. I’ve also been on the owner’s side: I run my own service business here in DFW, and AI handles a big part of the marketing and back office that keep it going.</p>
     </div>
     <div>
-      <h2>Why in person</h2>
-      <p>Most people I talk to have already tried to learn AI. They've bookmarked the courses, watched the videos and sat through the webinars. What they didn't get was someone showing them how it applies to their job, their clients and their business.</p>
-      <p>That's what I do. I sit down next to you, we work on your real work, and we figure it out together. You leave more capable than you came in, and still fully in charge.</p>
+      <h2>Building with AI</h2>
+      <p>I don’t just use AI tools; I build with them. I’ve led AI initiatives for clients and inside the companies I’ve worked with. That includes building AI systems that turned hours of manual work into minutes, and helping launch an AI-powered product to customers who had to trust it before they’d use it. That experience shaped how I teach.</p>
+    </div>
+  </div>
+</section>
+<section>
+  <div class="wrap split">
+    <div>
+      <p class="pull">AI is a tool.</p>
+    </div>
+    <div>
+      <p>It won’t replace what you know about your clients, your market or your craft. It does let you put that knowledge to work faster and in more places. Most people don’t need another webinar. They need someone in the room who can sit down with their real work and show them what’s possible.</p>
+    </div>
+  </div>
+</section>
+<section class="white">
+  <div class="wrap split">
+    <div>
+      <h2>Teaching runs in my family</h2>
+    </div>
+    <div>
+      <p>My parents were public school teachers for more than 30 years each, and my sister is in her 24th year in the classroom. I grew up watching how good teachers work: they meet people where they are and stay with them until it clicks. That’s how I run every session.</p>
       <div class="actions"><a class="btn" href="contact.html">Start a conversation</a></div>
     </div>
   </div>
 </section>
 '''
 page("about.html","About Andrew Neal | Local AI Bootcamp",
-     "Andrew Neal brings 15+ years of marketing leadership to personal, in-person AI training for professionals and teams in Dallas–Fort Worth.", about)
+     "Andrew Neal has 15+ years leading marketing for service, education, fintech and e-commerce companies, and builds with AI. He teaches AI in person across DFW.", about)
 
 # ---------------- CONTACT ----------------
 contact_fields = name_email + '<div class="field-row">' + f_input("company","Company", req=False) + f_input("phone","Phone","tel",req=False,auto="tel") + '</div>' + \
